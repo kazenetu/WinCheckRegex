@@ -99,6 +99,7 @@
       this.ReplaceText.Name = "ReplaceText";
       this.ReplaceText.Size = new System.Drawing.Size(669, 79);
       this.ReplaceText.TabIndex = 5;
+      this.ReplaceText.Text = "$1！";
       // 
       // label3
       // 
@@ -121,6 +122,7 @@
       this.RegexText.Name = "RegexText";
       this.RegexText.Size = new System.Drawing.Size(669, 93);
       this.RegexText.TabIndex = 3;
+      this.RegexText.Text = "<summary>(.+?)</summary>";
       // 
       // label2
       // 
@@ -155,6 +157,8 @@
       this.SrcText.Name = "SrcText";
       this.SrcText.Size = new System.Drawing.Size(669, 93);
       this.SrcText.TabIndex = 1;
+      this.SrcText.Text = "/// <summary>クラスコメント</summary>\r\n/// <typeparam name=\"\"T\"\">A</typeparam>\r\n/// <typ" +
+    "eparam name=\"\"U\"\">B</typeparam>\r\n/// <typeparam name=\"\"I\"\">C</typeparam>";
       // 
       // button1
       // 
@@ -166,6 +170,7 @@
       this.button1.TabIndex = 8;
       this.button1.Text = "変換";
       this.button1.UseVisualStyleBackColor = true;
+      this.button1.Click += new System.EventHandler(this.button1_Click);
       // 
       // MainForm
       // 
